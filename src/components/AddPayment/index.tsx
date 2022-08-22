@@ -43,7 +43,7 @@ const AddPayment = (props: Props) => {
 				onChange={changeFieldHandler("amount")}
 			/>
 			<button type="button" onClick={addPaymentHandler}>
-				Add Payment
+				Add
 			</button>
 		</div>
 	)

@@ -25,14 +25,21 @@ const PaymentItem = ({ payment }: Props) => {
 	if (selectedPayment?.id === payment.id) return <EditPayment />
 
 	return (
-		<div>
-			<h4>{`${payment.name} - ${payment.amount}`}</h4>
-			<button type="button" onClick={selectPaymentHandler}>
-				Edit
-			</button>
-			<button type="button" onClick={deletePaymentHandler}>
-				Delete
-			</button>
+		<div className="payment-item">
+			<div className="payment-details">
+				<h4>{payment.name}</h4>
+				<h5>
+					{payment.amount.toLocaleString("en-us", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+				</h5>
+			</div>
+			<div className="payment-actions">
+				<button type="button" onClick={selectPaymentHandler}>
+					Edit
+				</button>
+				<button type="button" onClick={deletePaymentHandler}>
+					Delete
+				</button>
+			</div>
 		</div>
 	)
 }

@@ -12,7 +12,7 @@ const PaymentList = (props: Props) => {
 	if (!payments.length) return <h4>No payments.</h4>
 
 	return (
-		<div>
+		<div className="payment-list">
 			{payments.map((payment: PaymentType, index: number) => (
 				<PaymentItem key={index} payment={payment} />
 			))}

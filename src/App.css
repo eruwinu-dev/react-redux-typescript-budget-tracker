@@ -1,39 +1,63 @@
-.App {
-  text-align: center;
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+	width: 35%;
+	padding: 0.5rem;
+	border: 1px solid crimson;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+section > h2 {
+	text-align: center;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.payment-list {
+	width: full;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.payment-item {
+	width: full;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	margin-top: 0.25rem;
+	border: 1px solid seagreen;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.payment-details {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
+.payment-actions {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.payment-summary {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: 1px solid steelblue;
+}
+
